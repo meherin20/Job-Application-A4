@@ -32,6 +32,35 @@
       <h2 class="text-xl sm:text-2xl font-bold text-[#1e3a5f]">Available Jobs</h2>
       <span id="jobs-count" class="text-sm text-gray-500">8 jobs</span>
     </div>
+    <!-- Tabs -->
+    <div id="tabs-wrapper" class="flex gap-2 mb-6">
+      <button type="button" data-tab="all" class="tab-btn px-4 py-2 rounded-full text-sm font-medium bg-[#2563eb] text-white transition-colors">
+All
+        </button>
+      <button type="button" data-tab="interview" class="tab-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-gray-600 hover:bg-gray-300 transition-colors">
+Interview
+        </button>
+      <button type="button" data-tab="rejected" class="tab-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-200 text-gray-600 hover:bg-gray-300 transition-colors">
+Rejected
+        </button>
+    </div>
+    <!-- Job Cards Container -->
+    <div id="jobs-container" class="space-y-4">
+      <!-- Job cards will be rendered here by JavaScript -->
+    </div>
+
+    <!-- Empty State (shown when tab has no jobs) -->
+    <div id="empty-state" class="hidden bg-white rounded-xl shadow-sm border border-gray-100 p-8 sm:p-12 text-center">
+      <div class="flex justify-center mb-4">
+        <svg class="w-16 h-16 text-sky-200" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM6 20V4h7v5h5v11H6z" />
+          <path d="M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.5" fill="none" />
+        </svg>
+      </div>
+      <p class="text-lg font-semibold text-gray-800 mb-2">No jobs available</p>
+      <p class="text-sm text-gray-500">Check back soon for new job opportunities</p>
+    </div>
+  </div>
     
 
     
