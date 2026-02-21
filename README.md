@@ -17,7 +17,7 @@ Event Bubbling is a process where an event starts from the target element and th
 ques-4 ans:
 Event Delegation means adding one event listener to a parent element instead of adding many listeners to child elements.Because events bubble up, the parent can handle events from its children.It is useful because it saves code, improves performance, and works for dynamically created elements.
 
-        ques-5 ans:
+ques-5 ans:
 preventDefault() stops the default action of an element.
         For example, it stops a form from submitting or a link from redirecting.
 stopPropagation() stops the event from spreading to parent elements.
