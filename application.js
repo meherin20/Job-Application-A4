@@ -80,3 +80,17 @@ description: 'We are looking for an experienced Frontend Developer to build scal
 status: 'not_applied',
         },
         ];
+
+let jobs = JSON.parse(JSON.stringify(initialState));
+let currentTab = 'all';
+
+const DOM = {
+container: document.getElementById('jobs-container'),
+emptyState: document.getElementById('empty-state'),
+jobsCount: document.getElementById('jobs-count'),
+dashboardTotal: document.getElementById('dashboard-total'),
+dashboardInterview: document.getElementById('dashboard-interview'),
+dashboardRejected: document.getElementById('dashboard-rejected'),
+tabButtons: document.querySelectorAll('.tab-btn'),
+tabsWrapper: document.getElementById('tabs-wrapper'),
+};
